@@ -1,1 +1,11 @@
-<h1>Tudo tem um começo</h1>
+<h1>Tudo tem um começo</h1>    
+<p>
+    Este site foi visitado : 
+    <span id="visits"></span> vezes
+</p>
+<script>
+    function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+    }
+</script>
+<script async src="https://api.countapi.xyz/hit/walmello24.github.iotudo-tem-um-comeco/visits?callback=cb"></script>
