@@ -1,12 +1,135 @@
-<h1>Tudo tem um começo</h1>    
-<p>
-    A partir de 00:27 26/11/2020
-    Este site foi visitado : 
-    <span id="visits"></span> vezes
-</p>
-<script>
-    function cb(response) {
-        document.getElementById('visits').innerText = response.value;
-    }
-</script>
-<script async src="https://api.countapi.xyz/hit/walmello24.github.iotudo-tem-um-comeco/visits?callback=cb"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter Melo - UX Engineer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Mali:wght@700&family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <nav class="card">
+        <div class="no-mobile no-tablet">
+            <div class="container flex around">
+                <div class="flex">
+                    <div class="avatar"></div>
+                    <h1>Walter Melo</h1>    
+                </div>
+                <div class="flex">
+                    <ul class="flex">
+                        <li>Home</li>
+                        <li>Sobre Mim</li>
+                        <li>Portfolio</li>
+                    </ul>
+                </div>
+                <div class="flex">
+                    <ul class="flex social">
+                        <li>
+                            <img src="LinkedIn.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="GitHub.svg" alt="">   
+                        </li>
+                        <li>
+                            <img src="Behance.svg" alt="">
+                        </li>
+                    </ul>
+                </div>    
+            </div>    
+        </div>
+        <div class="no-desktop">
+            <div class="container flex around">
+                <div class="flex">
+                    <div class="avatar"></div>
+                    <h1>Walter Melo</h1>    
+                </div>
+                <div>
+                    <img src="menu.svg" alt="" onclick="toggleMenu()">
+                </div>    
+                <div class="menu-active">
+                    ATIVADO
+                </div>
+            </div>    
+        </div>
+    </nav>
+    <header>
+        <div class="no-mobile">
+            <div class="container">
+                <div class="box flex card around">
+                    <div class="avatar-big"></div>
+                    <div class="wavy">
+                        <h1>Olá :)</h1>                
+                        <h2>
+                            Sou um desenvolvedor <span class="front">Front-End</span> em transição de carreira para <span class="ux">UX Designer</span>
+                        </h2>
+                    </div>
+                </div>    
+            </div>    
+        </div>
+        <div class="no-desktop no-tablet">
+            <div class="container">
+                <div class="mobile-box card">
+                    <img src="eu.png" alt="">
+                    <div class="wavy">
+                        <h1>Olá :)</h1>                
+                        <h2>
+                            Sou um desenvolvedor <span class="front">Front-End</span> em transição de carreira para <span class="ux">UX Designer</span>
+                        </h2>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="no-mobile">
+            <div style="background-color: black; color: white; position: absolute; bottom: 0; width: 100vw;">
+                <div class="container flex around">
+                    <p>
+                        Tudo tem um começo    
+                    </p>
+                    <p>
+                        A partir de 00:27 26/11/2020
+                        Este site foi visitado : 
+                        <span id="visits"></span> vezes
+                    </p>
+                    <script>
+                        function cb(response) {
+                            document.getElementById('visits').innerText = response.value;
+                        }
+                    </script>
+                    <script async src="https://api.countapi.xyz/hit/walmello24.github.iotudo-tem-um-comeco/visits?callback=cb"></script>
+                </div>
+            </div>           
+        </div>
+        <div class="no-desktop no-tablet">
+            <div style="background-color: black; color: white">
+                <div class="container card">
+                    <p>
+                        Tudo tem um começo    
+                    </p>
+                    <p>
+                        A partir de 00:27 26/11/2020
+                        Este site foi visitado : 
+                        <span id="visits"></span> vezes
+                    </p>
+                    <script>
+                        function cb(response) {
+                            document.getElementById('visits').innerText = response.value;
+                        }
+                    </script>
+                    <script async src="https://api.countapi.xyz/hit/walmello24.github.iotudo-tem-um-comeco/visits?callback=cb"></script>
+                </div>
+            </div>           
+        </div>
+    </footer>
+    <script>
+        const toggleMenu = _ => {
+            document.querySelector('menu-active').style.display = 'block'
+            document.querySelector('menu-inactive').style.display = 'none'
+        }
+    </script>
+</body>
+</html>
+
